@@ -66,23 +66,12 @@
             Welcome to your first JSP web application!
         </div>
         
-        <%
-            // JSP Scriptlet example
-            String userAgent = request.getHeader("User-Agent");
-            String clientIP = request.getRemoteAddr();
-        %>
-        
         <div class="info">
-            <h3>Client Information:</h3>
-            <p><strong>Your IP:</strong> <%= clientIP %></p>
-            <p><strong>User Agent:</strong> <%= userAgent != null ? userAgent.substring(0, Math.min(userAgent.length(), 50)) + "..." : "Unknown" %></p>
+
+            <p>This app is built to test a simple CI/CD pipeline using Jenkins and Tomcat 8.</p>
+            
         </div>
-        
-        <div class="timestamp">
-            <p>Page generated on: <%= new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()) %></p>
-        </div>
-        
-        <p><a href="about.jsp" style="color: #667eea; text-decoration: none; font-weight: bold;">→ Learn more about this app</a></p>
+
     </div>
 </body>
 </html>

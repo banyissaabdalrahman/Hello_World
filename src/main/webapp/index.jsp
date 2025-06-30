@@ -66,20 +66,6 @@
             Welcome to your first JSP web application!
         </div>
         
-        <div class="info">
-            <h3>JSP Information:</h3>
-            <p><strong>Server Info:</strong> <%= application.getServerInfo() %></p>
-            <p><strong>JSP Version:</strong> <span class="jsp-info">JSP 2.3</span></p>
-            <p><strong>Servlet Context:</strong> <%= application.getServletContextName() %></p>
-        </div>
-        
-        <div class="info">
-            <h3>Dynamic Content:</h3>
-            <p><strong>Current Time:</strong> <%= new Date() %></p>
-            <p><strong>Session ID:</strong> <%= session.getId() %></p>
-            <p><strong>Request Method:</strong> <%= request.getMethod() %></p>
-        </div>
-        
         <%
             // JSP Scriptlet example
             String userAgent = request.getHeader("User-Agent");
